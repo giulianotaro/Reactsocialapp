@@ -1,0 +1,23 @@
+.friend {
+
+    $size: 70px;
+
+ 
+  display: flex;
+
+  img {
+      width:  $size;
+      height:  $size;
+
+      margin-bottom: 16px;
+
+      border-radius: 50%;
+  }
+
+  p {
+      line-height:  $size;
+      margin: 0;
+      margin-left: 16px;
+  }
+
+}

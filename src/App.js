@@ -1,6 +1,6 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-/* import AddIva from "./components/AddIva" */
+import Home from "./pages/Home" ;
 
 function App() {
   const name = "ReactSocialApp";
@@ -19,8 +19,9 @@ function App() {
 
     <div>
       <Header name={name} links={nav} />
+      <Home />
       <Footer />
-    {/*   <AddIva price={1000} vat={22} /> */}
+    
     </div>
   );
 }
