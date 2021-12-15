@@ -37,9 +37,9 @@ const posts = [
 const Home = () => {
 
 
-const [friendsPreview, setFriendsPreview] = useState(friends);
-const [allPosts, setAllPosts] = useState(posts);
-const [messagesPreview, setMessaggesPreview] = useState(messages);
+const [friendsPreview, ] = useState(friends);
+const [allPosts, ] = useState(posts);
+const [messagesPreview, ] = useState(messages);
 
 
 
