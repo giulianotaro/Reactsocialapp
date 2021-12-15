@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/giulianotaro/reactsocialapp/static/css/main.734a8620.chunk.css",
-    "main.js": "/giulianotaro/reactsocialapp/static/js/main.06961ee5.chunk.js",
-    "main.js.map": "/giulianotaro/reactsocialapp/static/js/main.06961ee5.chunk.js.map",
-    "runtime-main.js": "/giulianotaro/reactsocialapp/static/js/runtime-main.42e8a259.js",
-    "runtime-main.js.map": "/giulianotaro/reactsocialapp/static/js/runtime-main.42e8a259.js.map",
-    "static/js/2.d5094b52.chunk.js": "/giulianotaro/reactsocialapp/static/js/2.d5094b52.chunk.js",
-    "static/js/2.d5094b52.chunk.js.map": "/giulianotaro/reactsocialapp/static/js/2.d5094b52.chunk.js.map",
-    "static/js/3.94f902ca.chunk.js": "/giulianotaro/reactsocialapp/static/js/3.94f902ca.chunk.js",
-    "static/js/3.94f902ca.chunk.js.map": "/giulianotaro/reactsocialapp/static/js/3.94f902ca.chunk.js.map",
-    "index.html": "/giulianotaro/reactsocialapp/index.html",
-    "static/css/main.734a8620.chunk.css.map": "/giulianotaro/reactsocialapp/static/css/main.734a8620.chunk.css.map",
-    "static/js/2.d5094b52.chunk.js.LICENSE.txt": "/giulianotaro/reactsocialapp/static/js/2.d5094b52.chunk.js.LICENSE.txt"
+    "main.css": "/reactsocialapp/static/css/main.734a8620.chunk.css",
+    "main.js": "/reactsocialapp/static/js/main.06961ee5.chunk.js",
+    "main.js.map": "/reactsocialapp/static/js/main.06961ee5.chunk.js.map",
+    "runtime-main.js": "/reactsocialapp/static/js/runtime-main.dcf4532b.js",
+    "runtime-main.js.map": "/reactsocialapp/static/js/runtime-main.dcf4532b.js.map",
+    "static/js/2.d5094b52.chunk.js": "/reactsocialapp/static/js/2.d5094b52.chunk.js",
+    "static/js/2.d5094b52.chunk.js.map": "/reactsocialapp/static/js/2.d5094b52.chunk.js.map",
+    "static/js/3.94f902ca.chunk.js": "/reactsocialapp/static/js/3.94f902ca.chunk.js",
+    "static/js/3.94f902ca.chunk.js.map": "/reactsocialapp/static/js/3.94f902ca.chunk.js.map",
+    "index.html": "/reactsocialapp/index.html",
+    "static/css/main.734a8620.chunk.css.map": "/reactsocialapp/static/css/main.734a8620.chunk.css.map",
+    "static/js/2.d5094b52.chunk.js.LICENSE.txt": "/reactsocialapp/static/js/2.d5094b52.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.42e8a259.js",
+    "static/js/runtime-main.dcf4532b.js",
     "static/js/2.d5094b52.chunk.js",
     "static/css/main.734a8620.chunk.css",
     "static/js/main.06961ee5.chunk.js"
