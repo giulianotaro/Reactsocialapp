@@ -9,10 +9,10 @@ const Header = (props) => {
  
 
   return (
-    <header >
+    <header className={styles.header}>
       <h1>{name}</h1>
       <nav >
-        <ul className={styles.ul}>
+        <ul>
 
           {links.map((item, index) => 
             <li key={index}>
