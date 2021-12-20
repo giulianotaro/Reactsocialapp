@@ -16,21 +16,30 @@ const Home = () => {
   const [allPosts, setAllPosts] = useState(posts);
   const [messagesPreview, setMessagesPreview] = useState(messages);
 
+  // GETTER -> const friendPreview = [];
+  // SETTER -> friendPreview = [...]
+
+  // Esegui del codice quando il componente è inizializzato (montato in pagina)
+  // componentDidMount() --> simile a "DOMContentLoaded" ma solo per il componente
   useEffect(() => {
+    // fetch("https://edgemony-backend.herokuapp.com/friends?_limit=4")
+    //   .then((response) => response.json())
+    //   .then((data) => setFriendsPreview(data));
+
     http("/friends?_limit=4").then((data) => setFriendsPreview(data));
-  }, []);
-
-  useEffect(() => {
     http("/messages?_limit=4").then((data) => setMessagesPreview(data));
-  }, []);
-
-  useEffect(() => {
     http("/posts").then((data) => setAllPosts(data));
+
+    // Promise.all([
+    //   http("/friends?_limit=4"),
+    //   http("/messages?_limit=4"),
+    //   http("/posts")
+    // ]).then((data) => console.log(data[0]))
   }, []);
 
   return (
     <section className={styles.home}>
-      <h3>Benvenuto utente</h3>
+      <h3>Bevenuto utente</h3>
       <div className={styles.grid}>
         <aside>
           {friendsPreview.map((friend, index) => (
@@ -43,7 +52,6 @@ const Home = () => {
           ))}
         </main>
         <aside>
-          {" "}
           {messagesPreview.map((message, index) => (
             <MessagePreview key={index} data={message} />
           ))}
