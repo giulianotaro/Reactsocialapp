@@ -1,13 +1,12 @@
 import { useReducer } from "react";
 import { Routes, Route } from "react-router-dom";
-
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import NewPost from "./pages/NewPost";
 import Messages from "./pages/Messages";
 import Friends from "./pages/Friends";
-
 import Home from "./pages/Home";
+import LoginPages from "./components/LoginPages";
 
 const INIT_STATE = {
   name: "Feisbrut",
@@ -15,6 +14,7 @@ const INIT_STATE = {
     { link: "/", label: "Home" },
     { link: "/messages", label: "Messages" },
     { link: "/friends", label: "Friends" },
+    { link: "/login", label: "Login" },
   ],
   friendsPreview: [],
 };
@@ -31,6 +31,8 @@ const reducer = (state, action) => {
 function App() {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
 
+ 
+
   return (
     <div>
       <Header name={state.name} links={state.nav} />
@@ -44,6 +46,7 @@ function App() {
         <Route path="/new-post" element={<NewPost />} />
         <Route path="/messages" element={<Messages />} />
         <Route path="/friends" element={<Friends />} />
+        <Route path="/login" element={<LoginPages />} />
       </Routes>
 
       <Footer />

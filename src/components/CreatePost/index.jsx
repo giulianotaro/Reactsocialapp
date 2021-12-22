@@ -7,6 +7,7 @@ const CreatePost = () => {
   const [imgInput, setImgInput] = useState("");
   const [messageInput, setMessageInput] = useState("");
   const [formPostObj, setFormPostObj] = useState({});
+  
 
   const handleSendBtn = (event) => {
     event.preventDefault();
@@ -14,6 +15,7 @@ const CreatePost = () => {
     alert("Il post `e stato creato!");
   };
 
+  
   useEffect(() => {
     setFormPostObj({
       author: authorInput,
@@ -22,6 +24,9 @@ const CreatePost = () => {
       photo: imgInput,
     });
   }, [authorInput, imgInput, messageInput]);
+
+
+
 
   return (
     <div className={styles.createPost}>

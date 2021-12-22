@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-
-
 import { FriendPreview } from "../../components/FriendPreview";
 import { MessagePreview } from "../../components/MessagePreview";
 import { Post } from "../../components/Post";
