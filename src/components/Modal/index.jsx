@@ -1,20 +1,11 @@
-import { useState, useEffect } from 'react';
-import styles from './Modal.module.scss';
+import styles from "./Modal.module.scss";
 
-const Modal = (props) => {
-    const [modal, setModal] = useState(false);
+const Modal = ({ bgColor, text }) => {
+  return (
+    <div className={styles.Modal} style={{ background: `${bgColor}` }}>
+      <p>{text}</p>
+    </div>
+  );
+};
 
-    useEffect(() => {
-        setTimeout(() => {
-            setModal(true)
-        }, 2000)
-    }, [])
-
-
-    return (
-        <div className={styles.modal}>
-        </div>
-    )
-}
-
-export { Modal } ;
+export default Modal;

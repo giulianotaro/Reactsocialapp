@@ -6,8 +6,11 @@
   display: flex;
   justify-content: space-between;
 
-  h1 { color:darken( rgba(16, 217, 224, 0.295), 20%);
+  h1 {
     margin: 0;
+    color: $main;
+    font-size: 3.2rem;
+    font-family: $fancyFont;
   }
 
   nav {
@@ -24,7 +27,6 @@
         &:hover {
           // .header nav ul a:hover { ... }
           background-color: lighten($main, 40%);
-          border-radius: 20px;
         }
 
         &.active {

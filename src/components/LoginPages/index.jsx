@@ -4,7 +4,13 @@ import styles from "./LoginPages.module.scss";
 const LoginPages = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [button, setButton] = useState({});
+  
+
+  const handlebutton  = (event) => {
+    event.preventDefault();
+   
+  };
+
 
   return (
     <div className={styles.Login}>
@@ -29,7 +35,7 @@ const LoginPages = () => {
             placeholder="Password"
           />
 
-          <button type="submit" onClick={() => setButton(button(true))}>
+          <button type="submit" onClick={handlebutton}>
             ACCEDI
           </button>
         </div>
