@@ -1,22 +1,3 @@
-## Pubblicazione su Pages tramite Actions
-
-- Creare un file `.yml` in una cartella `.github/workflows`
-- nel caso di CRA su GH pages aggiornare il `package.json` con la chiave `homepage` (username.github.io/repo)
-- committo e pusho
-- aspetto che la build sia terminata
-- sei settings della pages impostare come sorgente la branch `gh-pages`
-- aprire l'url della mia pages (username.github.io/repo)
-
-## "Ciclo" dello stato locale (con useState)
-
-![./_docs/useState.png](./_docs/useState.png)
-
-## "Ciclo" dello stato locale (con useRducer)
-
-![./_docs/useRducer.png](./_docs/useReducer.png)
-
----
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
