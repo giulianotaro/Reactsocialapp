@@ -1,42 +1,75 @@
-import { useState, useEffect } from "react";
+import { useReducer } from "react";
 import styles from "./Login.module.scss";
 
-const Login = () => {
+const initialForm = {
+  username: "",
+  password: "",
+};
+
+/* const Button = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setUserData({
-      userName,
+      username,
       password,
     });
-  };
+  }; */
 
-  const [userName, setUserName] = useState("");
-  const [password, setPassword] = useState("");
-  const [userData, setUserData] = useState({});
+function reducer(state, action) {
+  switch (action.type) {
+    case "update_input":
+      return {
+        ...state,
+        [action.key]: action.value,
+      };
+    case "input_none":
+      return { ...state, 
+      value:false};
 
-  useEffect(() => {
-    console.log(userData);
-  }, [userData]);
+    default:
+      return state;
+  }
+}
+
+function Login() {
+  const [state, dispatch] = useReducer(reducer, initialForm);
 
   return (
     <form className={styles.Login}>
       <input
-        value={userName}
-        onChange={(e) => setUserName(e.target.value)}
-        type="text"
+        value={state.username}
+        onChange={(e) =>
+          dispatch({
+            type: "update_input",
+            value: e.target.value,
+            key: "username",
+          })
+        }
         placeholder="Username"
         required
       />
       <input
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        type="password"
+        value={state.password}
+        onChange={(e) =>
+          dispatch({
+            type: "update_input",
+            value: e.target.value,
+            key: "password",
+          })
+        }
         placeholder="Password"
         required
       />
-      <input onClick={handleSubmit} type="submit" value="Login" />
+
+      <button
+        onClick={() => {
+          alert("OK, ACCESSO EFFETTUATO.");
+        }}
+      >
+        Accedi
+      </button>
     </form>
   );
-};
+}
 
 export default Login;
