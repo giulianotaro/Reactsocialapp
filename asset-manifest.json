@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/reactsocialapp/static/css/main.a6f437e7.chunk.css",
-    "main.js": "/reactsocialapp/static/js/main.d04ea2d9.chunk.js",
-    "main.js.map": "/reactsocialapp/static/js/main.d04ea2d9.chunk.js.map",
+    "main.js": "/reactsocialapp/static/js/main.19bf9104.chunk.js",
+    "main.js.map": "/reactsocialapp/static/js/main.19bf9104.chunk.js.map",
     "runtime-main.js": "/reactsocialapp/static/js/runtime-main.ab62afcd.js",
     "runtime-main.js.map": "/reactsocialapp/static/js/runtime-main.ab62afcd.js.map",
-    "static/js/2.15166151.chunk.js": "/reactsocialapp/static/js/2.15166151.chunk.js",
-    "static/js/2.15166151.chunk.js.map": "/reactsocialapp/static/js/2.15166151.chunk.js.map",
+    "static/js/2.e7bd1c5c.chunk.js": "/reactsocialapp/static/js/2.e7bd1c5c.chunk.js",
+    "static/js/2.e7bd1c5c.chunk.js.map": "/reactsocialapp/static/js/2.e7bd1c5c.chunk.js.map",
     "index.html": "/reactsocialapp/index.html",
     "static/css/main.a6f437e7.chunk.css.map": "/reactsocialapp/static/css/main.a6f437e7.chunk.css.map",
-    "static/js/2.15166151.chunk.js.LICENSE.txt": "/reactsocialapp/static/js/2.15166151.chunk.js.LICENSE.txt"
+    "static/js/2.e7bd1c5c.chunk.js.LICENSE.txt": "/reactsocialapp/static/js/2.e7bd1c5c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ab62afcd.js",
-    "static/js/2.15166151.chunk.js",
+    "static/js/2.e7bd1c5c.chunk.js",
     "static/css/main.a6f437e7.chunk.css",
-    "static/js/main.d04ea2d9.chunk.js"
+    "static/js/main.19bf9104.chunk.js"
   ]
 }
