@@ -1,20 +1,40 @@
 {
   "files": {
-    "main.css": "/reactsocialapp/static/css/main.a6f437e7.chunk.css",
-    "main.js": "/reactsocialapp/static/js/main.19bf9104.chunk.js",
-    "main.js.map": "/reactsocialapp/static/js/main.19bf9104.chunk.js.map",
-    "runtime-main.js": "/reactsocialapp/static/js/runtime-main.ab62afcd.js",
-    "runtime-main.js.map": "/reactsocialapp/static/js/runtime-main.ab62afcd.js.map",
-    "static/js/2.e7bd1c5c.chunk.js": "/reactsocialapp/static/js/2.e7bd1c5c.chunk.js",
-    "static/js/2.e7bd1c5c.chunk.js.map": "/reactsocialapp/static/js/2.e7bd1c5c.chunk.js.map",
+    "main.css": "/reactsocialapp/static/css/main.e1a47065.chunk.css",
+    "main.js": "/reactsocialapp/static/js/main.e2b6a25d.chunk.js",
+    "main.js.map": "/reactsocialapp/static/js/main.e2b6a25d.chunk.js.map",
+    "runtime-main.js": "/reactsocialapp/static/js/runtime-main.ccdbb4a7.js",
+    "runtime-main.js.map": "/reactsocialapp/static/js/runtime-main.ccdbb4a7.js.map",
+    "static/css/2.7c168627.chunk.css": "/reactsocialapp/static/css/2.7c168627.chunk.css",
+    "static/js/2.fc2b1744.chunk.js": "/reactsocialapp/static/js/2.fc2b1744.chunk.js",
+    "static/js/2.fc2b1744.chunk.js.map": "/reactsocialapp/static/js/2.fc2b1744.chunk.js.map",
+    "static/js/3.06d72cad.chunk.js": "/reactsocialapp/static/js/3.06d72cad.chunk.js",
+    "static/js/3.06d72cad.chunk.js.map": "/reactsocialapp/static/js/3.06d72cad.chunk.js.map",
+    "static/css/4.b8b0a27c.chunk.css": "/reactsocialapp/static/css/4.b8b0a27c.chunk.css",
+    "static/js/4.6555bd90.chunk.js": "/reactsocialapp/static/js/4.6555bd90.chunk.js",
+    "static/js/4.6555bd90.chunk.js.map": "/reactsocialapp/static/js/4.6555bd90.chunk.js.map",
+    "static/js/5.c774c9ee.chunk.js": "/reactsocialapp/static/js/5.c774c9ee.chunk.js",
+    "static/js/5.c774c9ee.chunk.js.map": "/reactsocialapp/static/js/5.c774c9ee.chunk.js.map",
+    "static/css/6.beea993d.chunk.css": "/reactsocialapp/static/css/6.beea993d.chunk.css",
+    "static/js/6.b1611adb.chunk.js": "/reactsocialapp/static/js/6.b1611adb.chunk.js",
+    "static/js/6.b1611adb.chunk.js.map": "/reactsocialapp/static/js/6.b1611adb.chunk.js.map",
+    "static/css/7.f3dd9d36.chunk.css": "/reactsocialapp/static/css/7.f3dd9d36.chunk.css",
+    "static/js/7.7e1dd591.chunk.js": "/reactsocialapp/static/js/7.7e1dd591.chunk.js",
+    "static/js/7.7e1dd591.chunk.js.map": "/reactsocialapp/static/js/7.7e1dd591.chunk.js.map",
+    "static/js/8.6941a980.chunk.js": "/reactsocialapp/static/js/8.6941a980.chunk.js",
+    "static/js/8.6941a980.chunk.js.map": "/reactsocialapp/static/js/8.6941a980.chunk.js.map",
     "index.html": "/reactsocialapp/index.html",
-    "static/css/main.a6f437e7.chunk.css.map": "/reactsocialapp/static/css/main.a6f437e7.chunk.css.map",
-    "static/js/2.e7bd1c5c.chunk.js.LICENSE.txt": "/reactsocialapp/static/js/2.e7bd1c5c.chunk.js.LICENSE.txt"
+    "static/css/2.7c168627.chunk.css.map": "/reactsocialapp/static/css/2.7c168627.chunk.css.map",
+    "static/css/4.b8b0a27c.chunk.css.map": "/reactsocialapp/static/css/4.b8b0a27c.chunk.css.map",
+    "static/css/6.beea993d.chunk.css.map": "/reactsocialapp/static/css/6.beea993d.chunk.css.map",
+    "static/css/7.f3dd9d36.chunk.css.map": "/reactsocialapp/static/css/7.f3dd9d36.chunk.css.map",
+    "static/css/main.e1a47065.chunk.css.map": "/reactsocialapp/static/css/main.e1a47065.chunk.css.map",
+    "static/js/3.06d72cad.chunk.js.LICENSE.txt": "/reactsocialapp/static/js/3.06d72cad.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ab62afcd.js",
-    "static/js/2.e7bd1c5c.chunk.js",
-    "static/css/main.a6f437e7.chunk.css",
-    "static/js/main.19bf9104.chunk.js"
+    "static/js/runtime-main.ccdbb4a7.js",
+    "static/js/3.06d72cad.chunk.js",
+    "static/css/main.e1a47065.chunk.css",
+    "static/js/main.e2b6a25d.chunk.js"
   ]
 }

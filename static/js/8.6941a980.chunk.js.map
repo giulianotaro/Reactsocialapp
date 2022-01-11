@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/Messages/index.jsx"],"names":["Messages"],"mappings":"yHAIiBA,UAJA,WACb,OAAO","file":"static/js/8.6941a980.chunk.js","sourcesContent":["const Messages = () => {\n    return <h1>Messagesssss</h1>;\n  };\n  \n  export default Messages;"],"sourceRoot":""}
