@@ -6,15 +6,6 @@ const initialForm = {
   password: "",
 };
 
-/* const Button = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setUserData({
-      username,
-      password,
-    });
-  }; */
-
 function reducer(state, action) {
   switch (action.type) {
     case "update_input":
@@ -23,8 +14,7 @@ function reducer(state, action) {
         [action.key]: action.value,
       };
     case "input_none":
-      return { ...state, 
-      value:false};
+      return { ...state, update_input: !state.update_input };
 
     default:
       return state;
@@ -62,9 +52,16 @@ function Login() {
       />
 
       <button
-        onClick={() => {
-          alert("OK, ACCESSO EFFETTUATO.");
-        }}
+        onClick={() =>
+          
+          dispatch({
+            type: "input_none",
+          })
+
+          
+
+
+        }
       >
         Accedi
       </button>
