@@ -1,7 +1,9 @@
 import CreatePost from "../../components/CreatePost";
 
 const NewPost = () => {
-  return <CreatePost />;
-};
+    return (
+        <CreatePost />
+    )
+}
 
 export default NewPost;

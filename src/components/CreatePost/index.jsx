@@ -1,70 +1,88 @@
-import { useState, useEffect } from "react";
+import { useEffect, useReducer } from "react";
 import { httpPOST } from "../../libs/http";
-
 import Modal from "./../Modal";
 import styles from "./CreatePost.module.scss";
 
+const initPost = {
+  formPostObj: {
+    author: "",
+    text: "",
+    date: new Date().toISOString(),
+    photo: "",
+  },
+  isModalVisible: false,
+};
+
+const reducer = (state, action) => {
+  switch (action.type) {
+    case "update_form":
+      return {
+        ...state,
+        formPostObj: { ...state.formPostObj, [action.key]: action.payload },
+      };
+    case "modal":
+      return { ...state, isModalVisible: action.payload };
+    default:
+      return state;
+  }
+};
+
 const CreatePost = () => {
-  const [authorInput, setAuthorInput] = useState("");
-  const [imgInput, setImgInput] = useState("");
-  const [messageInput, setMessageInput] = useState("");
-  const [formPostObj, setFormPostObj] = useState({});
-  const [isModalVisible, setModalVisibile] = useState(false);
+  const [state, dispatch] = useReducer(reducer, initPost);
 
   const handleSendBtn = (event) => {
     event.preventDefault();
-    httpPOST("/posts", formPostObj);
-    setModalVisibile(true);
-
-    setTimeout(() => {
-      setModalVisibile(false);
-    }, 3000);
+    httpPOST("/posts", state.formPostObj);
+    dispatch({ type: "modal", payload: !state.isModalVisible });
   };
 
   useEffect(() => {
-    setFormPostObj({
-      author: authorInput,
-      text: messageInput,
-      date: new Date().toISOString(),
-      photo: imgInput,
-    });
-  }, [authorInput, imgInput, messageInput]);
+    dispatch({ type: "modal", payload: false });
+  }, [state.formPostObj]);
 
   return (
     <div className={styles.createPost}>
-      {isModalVisible && (
-        <Modal bgColor="lightskyblue" text="Il post è stato aggiunto" />
-      )}
-
       <form>
         <div className={styles.__author}>
           <input
-            value={authorInput}
-            onChange={(e) => setAuthorInput(e.target.value)}
+            value={state.formPostObj.author}
+            onChange={(e) =>
+              dispatch({
+                type: "update_form",
+                key: "author",
+                payload: e.target.value,
+              })
+            }
             name="author"
             id="author"
             type="text"
             placeholder="Author"
             required
           />
-
           <input
-            onChange={(e) => setImgInput(e.target.value)}
-            value={imgInput}
+            value={state.formPostObj.photo}
+            onChange={(e) =>
+              dispatch({
+                type: "update_form",
+                key: "photo",
+                payload: e.target.value,
+              })
+            }
             name="img"
             id="img"
             type="text"
             placeholder="Img URL"
           />
-
-          <button type="submit" onClick={handleSendBtn}>
-            SEND
-          </button>
         </div>
-
         <textarea
-          value={messageInput}
-          onChange={(e) => setMessageInput(e.target.value)}
+          value={state.formPostObj.text}
+          onChange={(e) =>
+            dispatch({
+              type: "update_form",
+              key: "text",
+              payload: e.target.value,
+            })
+          }
           name="message"
           id="message"
           cols="30"
@@ -72,6 +90,12 @@ const CreatePost = () => {
           placeholder="Message"
           required
         ></textarea>
+        <button type="submit" onClick={handleSendBtn}>
+          SEND
+        </button>
+        {state.isModalVisible && (
+          <Modal bgColor="lightskyblue" text="Il post è stato aggiunto" />
+        )}
       </form>
     </div>
   );
